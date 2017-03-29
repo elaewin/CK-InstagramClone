@@ -18,7 +18,13 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        presentImagePicker(sourceType: .photoLibrary)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+//        presentImagePicker(sourceType: .photoLibrary)
     }
 
     func presentImagePicker(sourceType: UIImagePickerControllerSourceType) {
@@ -59,8 +65,10 @@ class HomeViewController: UIViewController {
     //MARK: Actions
     
     @IBAction func imageTapped(_ sender: Any) {
+        print("image tapped!")
         presentActionSheet()
     }
+    
 }
 
 extension HomeViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -72,10 +80,10 @@ extension HomeViewController: UIImagePickerControllerDelegate, UINavigationContr
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
-        if let originalImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+        if let editedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             
-            //create outlet to image view
-            //put on image view
+            self.selectedImageView.image = editedImage
         }
+        self.imagePickerControllerDidCancel(imagePicker)
     }
 }
