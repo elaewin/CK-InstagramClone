@@ -69,6 +69,21 @@ class HomeViewController: UIViewController {
         presentActionSheet()
     }
     
+    @IBAction func postButtonPressed(_ sender: Any) {
+        
+        if let image = self.selectedImageView.image {
+            
+            let newPost = Post(image: image)
+            CloudKit.shared.save(post: newPost, completion: { (success) in
+                
+                if success {
+                    
+                }
+                
+            })
+        }
+        
+    }
 }
 
 extension HomeViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
