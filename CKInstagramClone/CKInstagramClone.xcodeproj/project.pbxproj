@@ -14,6 +14,8 @@
 		553CDA621E8B2E9F00F5EC55 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553CDA611E8B2E9F00F5EC55 /* CloudKit.framework */; };
 		553CDA641E8B2ED300F5EC55 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553CDA631E8B2ED300F5EC55 /* HomeViewController.swift */; };
 		553CDA671E8B2F2B00F5EC55 /* CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553CDA661E8B2F2B00F5EC55 /* CloudKit.swift */; };
+		553CDA6C1E8C511900F5EC55 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553CDA6B1E8C511900F5EC55 /* Post.swift */; };
+		553CDA6E1E8C517500F5EC55 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553CDA6D1E8C517500F5EC55 /* UIExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		553CDA611E8B2E9F00F5EC55 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		553CDA631E8B2ED300F5EC55 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		553CDA661E8B2F2B00F5EC55 /* CloudKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKit.swift; sourceTree = "<group>"; };
+		553CDA6B1E8C511900F5EC55 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		553CDA6D1E8C517500F5EC55 /* UIExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		553CDA681E8B2F3000F5EC55 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				553CDA6B1E8C511900F5EC55 /* Post.swift */,
 				553CDA661E8B2F2B00F5EC55 /* CloudKit.swift */,
 			);
 			name = Model;
@@ -105,6 +110,7 @@
 		553CDA6A1E8B2F4300F5EC55 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				553CDA6D1E8C517500F5EC55 /* UIExtensions.swift */,
 				553CDA5F1E8B2E9A00F5EC55 /* CKInstagramClone.entitlements */,
 				553CDA4D1E8B2D2C00F5EC55 /* AppDelegate.swift */,
 				553CDA541E8B2D2C00F5EC55 /* Assets.xcassets */,
@@ -198,6 +204,8 @@
 				553CDA4E1E8B2D2C00F5EC55 /* AppDelegate.swift in Sources */,
 				553CDA671E8B2F2B00F5EC55 /* CloudKit.swift in Sources */,
 				553CDA641E8B2ED300F5EC55 /* HomeViewController.swift in Sources */,
+				553CDA6E1E8C517500F5EC55 /* UIExtensions.swift in Sources */,
+				553CDA6C1E8C511900F5EC55 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +373,7 @@
 				553CDA5E1E8B2D2C00F5EC55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

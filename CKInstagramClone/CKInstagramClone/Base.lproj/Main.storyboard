@@ -27,13 +27,26 @@
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evS-pj-NfE">
+                                <rect key="frame" x="46.5" y="45.5" width="281" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="POST">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="postButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0uf-i4-HBW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Iiw-bf-779" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="CrG-Ud-M8F"/>
                             <constraint firstItem="Iiw-bf-779" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HtJ-7a-gzD"/>
+                            <constraint firstItem="evS-pj-NfE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JCL-Go-sp8"/>
+                            <constraint firstItem="Iiw-bf-779" firstAttribute="top" secondItem="evS-pj-NfE" secondAttribute="bottom" constant="8" id="SYq-La-zKa"/>
                             <constraint firstItem="Iiw-bf-779" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TWm-xZ-5RR"/>
+                            <constraint firstItem="evS-pj-NfE" firstAttribute="width" secondItem="Iiw-bf-779" secondAttribute="width" id="fli-Ci-w5X"/>
                             <constraint firstItem="Iiw-bf-779" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.75" id="qBl-CP-pyJ"/>
                         </constraints>
                         <connections>
